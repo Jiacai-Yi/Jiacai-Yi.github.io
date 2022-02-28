@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-26T11:57:44.637Z</updated>
+  <updated>2022-02-28T10:40:00.197Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【ICML-PMLR】| 【JT-VAE】基于变分自编码器使用结点树生成100%有效的分子</title>
+    <link href="http://example.com/article/d0e673e3.html"/>
+    <id>http://example.com/article/d0e673e3.html</id>
+    <published>2022-02-28T08:43:37.000Z</published>
+    <updated>2022-02-28T10:40:00.197Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+
+</summary>
+      
+    
+    
+    
+    <category term="学习成长" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/"/>
+    
+    
+    <category term="molecular generation" scheme="http://example.com/tags/molecular-generation/"/>
+    
+    <category term="VAE" scheme="http://example.com/tags/VAE/"/>
+    
+    <category term="Graph representation" scheme="http://example.com/tags/Graph-representation/"/>
+    
+  </entry>
   
   <entry>
     <title>Learning summary of molecular generation</title>

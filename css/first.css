@@ -911,7 +911,7 @@ button {
 }
 @media screen and (min-width: 2048px) {
   .l_header #wrapper .nav-sub {
-    max-width: 55vw;
+    max-width: 65vw;
     margin: auto;
   }
 }
@@ -933,7 +933,7 @@ button {
   flex-shrink: 0;
   line-height: 64px;
   padding: 0 24px;
-  font-size: 1.25rem;
+  font-size: 1.625rem;
   font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
@@ -1527,7 +1527,7 @@ ul.list-v >li>a:hover {
 }
 @media screen and (min-width: 2048px) {
   #wrapper {
-    max-width: 55vw;
+    max-width: 65vw;
   }
 }
 #wrapper .menu {

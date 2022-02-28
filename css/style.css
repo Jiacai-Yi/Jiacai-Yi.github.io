@@ -894,7 +894,7 @@ article .readmore {
 }
 footer.footer {
   position: relative;
-  padding: 40px 10px 120px 10px;
+  padding: 20px 10px 20px 10px;
   width: 100%;
   color: var(--color-site-footer);
   margin: 0px auto;
@@ -1827,7 +1827,7 @@ svg.loading {
 }
 @media screen and (min-width: 2048px) {
   .body-wrapper {
-    max-width: 55vw;
+    max-width: 65vw;
   }
 }
 article#comments p[ct] {
@@ -6763,23 +6763,6 @@ pre {
   font-size: 13px;
   padding: 4px 8px;
 }
-.iziToast-texts {
-  max-width: 300px !important;
-  min-width: 200px !important;
-}
-@media screen and (max-width: 500px) {
-  .iziToast-texts {
-    max-width: unset !important;
-    min-width: unset !important;
-  }
-}
-.iziToast-title {
-  margin-bottom: 6px !important;
-  font-size: 1rem !important;
-}
-.iziToast-message {
-  word-break: break-all !important;
-}
 p,
 input,
 pre>span,
@@ -7606,4 +7589,19 @@ ul.list-v.rightmenu li.music .nav.volume .aplayer-volume-bar .aplayer-volume {
   100% {
     -webkit-transform: rotate(-10deg);
   }
+}
+@font-face {
+  font-family: "iconfont"; /* Project id 3209722 */
+/* Color fonts */
+  src: url("//at.alicdn.com/t/font_3209722_y8oml8srv2.woff2?t=1646034693359") format('woff2'), url("//at.alicdn.com/t/font_3209722_y8oml8srv2.woff?t=1646034693359") format('woff'), url("//at.alicdn.com/t/font_3209722_y8oml8srv2.ttf?t=1646034693359") format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-ANT-black:before {
+  content: "\e626";
 }
