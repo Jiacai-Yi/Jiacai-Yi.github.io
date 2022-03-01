@@ -20,7 +20,7 @@
   <meta content="AIomedical" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1646047922037" as="style">
+  <link rel="preload" href="/css/style.css?time=1646139327356" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -36,7 +36,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://jiacai-yi.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-02-28T08:43:37.000Z">
-<meta property="article:modified_time" content="2022-02-28T11:24:31.404Z">
+<meta property="article:modified_time" content="2022-03-01T12:54:14.270Z">
 <meta property="article:author" content="Jiacai Yi">
 <meta property="article:tag" content="molecular generation">
 <meta property="article:tag" content="VAE">
@@ -1698,8 +1698,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1646047922037" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1646047922037"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1646139327356" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1646139327356"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1776,9 +1776,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1646047922037","sites":"/js/plugins/sites.js?time=1646047922037","friends":"/js/plugins/friends.js?time=1646047922037","parallax":"/js/plugins/parallax.js?time=1646047922037","rightMenu":"/js/plugins/rightMenu.js?time=1646047922037","contributors":"/js/plugins/contributors.js?time=1646047922037","message":"/js/thirdparty/message.js?time=1646047922037","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1646047922037","search":"/js/search/hexo.js?time=1646047922037"},"css":{"style":"/css/style.css?time=1646047922037","message":"/css/message.css?time=1646047922037"}},
+    cdn: {"js":{"app":"/js/app.js?time=1646139327356","sites":"/js/plugins/sites.js?time=1646139327356","friends":"/js/plugins/friends.js?time=1646139327356","parallax":"/js/plugins/parallax.js?time=1646139327356","rightMenu":"/js/plugins/rightMenu.js?time=1646139327356","contributors":"/js/plugins/contributors.js?time=1646139327356","message":"/js/thirdparty/message.js?time=1646139327356","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1646139327356","search":"/js/search/hexo.js?time=1646139327356"},"css":{"style":"/css/style.css?time=1646139327356","message":"/css/message.css?time=1646139327356"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Mon Feb 28 2022 19:32:02 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Tue Mar 01 2022 20:55:27 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","wiki-hexo-theme","webinfo"],
       for_post: ["toc"],
@@ -2703,7 +2703,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <span id="more"></span>
 
 <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><div class="story post-story"><p><strong>该工作在分子生成领域中是比较经典的一篇文章，后续的许多工作都以该工作作为基线模型进行比较。</strong>并且作为基线模型收录于MOSES中。作者尝试将基于特定化学性质的分子设计自动化。在计算方面，这项工作涉及分子图的连续嵌入和生成。该工作使用分子图表征，而不是线性SMILES字符串实现。结点树变分自动编码器(JT-VAE)分两个阶段生成分子图，首先在化学子结构上生成树状结构的骨架，然后用图信息传递网络将它们组合成一个分子。这种方法能够逐步扩大分子，同时在每一步都保持分子的有效性。作者在从分子生成到优化的多个任务中评估了提出的模型，实验表明模型在很大程度上超过了先前最先进的基线。</p>
+</div><h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><div class="story post-story"><div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gitee.com/yijiacai/blog_images/raw/master/d0e673e3/mind.png" data-srcset="https://gitee.com/yijiacai/blog_images/raw/master/d0e673e3/mind.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></div></div>
 
+</div><h2 id="方法概述"><a href="#方法概述" class="headerlink" title="方法概述"></a>方法概述</h2><div class="story post-story"><p>文章通过引入一个合适的编码器和一个匹配的解码器，将变分自动编码器扩展到分子图。与之前的工作不同，作者将每个生成的分子解释为由从选择的子图构建而成。</p>
+<p>在将分子编码为向量表示时，以及将隐式向量解码为有效的分子图时，这些成分都被用作构建模块。这种观点的关键优势在于，解码器可以通过利用有效子结构的集合以及它们之间的相互作用来实现一个有效的分子，而不是试图通过化学上无效的中介来逐个原子建立分子。例如，除非存在芳香环，否则一个芳香键本身在化学上是无效的。</p>
+<p>图1为本文方法概述。一个分子图$G$首先被分解成它的结点树$\mathcal{T}_{G}$，树上的每个彩色节点代表分子中的一个子结构。然后，文章将树和图都编码为它们的隐式向量$\mathbf{Z} \mathcal{T}$和$\mathbf{Z} {G}$。为了解码分子，首先从$\mathbf{Z} \mathcal{T}$中重建结点树，然后将结点树中的节点组装回原始分子。</p>
+<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gitee.com/yijiacai/blog_images/raw/master/d0e673e3/Figure 1.png" data-srcset="https://gitee.com/yijiacai/blog_images/raw/master/d0e673e3/Figure 1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Figure 1. 方法概述"></div><span class="image-caption">Figure 1. 方法概述</span></div> 
 </div>
   </div>
   
@@ -2739,10 +2744,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="new-meta-box">
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-02-28T19:24:31+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-01T20:54:14+08:00">
   <a class="notlink">
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年2月28日</p>
+    <p>更新于：2022年3月1日</p>
   </a>
 </div>
 
@@ -2866,7 +2871,7 @@ Excel文件https://gitee.com/yijiacai/blog_i...</p>
 
 
     <div class="content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-text">摘要</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE"><span class="toc-text">思维导图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E6%A6%82%E8%BF%B0"><span class="toc-text">方法概述</span></a></li></ol>
     </div>
   </section>
 
@@ -3013,7 +3018,7 @@ Excel文件https://gitee.com/yijiacai/blog_i...</p>
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1646047922037.js"></script>
+<script src="/js/app.js?time=1646139327356.js"></script>
 
 
 
@@ -3107,7 +3112,7 @@ Excel文件https://gitee.com/yijiacai/blog_i...</p>
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1646047922037')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1646139327356')</script>
 
 
 
@@ -3236,19 +3241,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1646047922037")
+        volantis.js("/js/plugins/sites.js?time=1646139327356")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1646047922037")
+        volantis.js("/js/plugins/friends.js?time=1646139327356")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1646047922037")
+        volantis.js("/js/plugins/contributors.js?time=1646139327356")
       }
     
   };
@@ -3373,7 +3378,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1646047922037");
+    return volantis.js("/js/search/hexo.js?time=1646139327356");
   }
 
   function loadSearchService() {
@@ -3694,6 +3699,60 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
 
+    <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = "/libs/mathjax/es5/tex-mml-chtml.js";
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typesetPromise();
+  }
+</script>
+
+
+
 </pjax>
 
 <script>
@@ -3873,7 +3932,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"AIomedical","url":"https://jiacai-yi.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiacai Yi","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jiacai-yi.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://jiacai-yi.github.io/","name":"AIomedical"}},{"@type":"ListItem","position":2,"item":{"@id":"https://jiacai-yi.github.io/categories/学习成长/","name":"学习成长"}},{"@type":"ListItem","position":3,"item":{"@id":"https://jiacai-yi.github.io/article/d0e673e3.html","name":"ICML-PMLR| 基于变分自编码器使用结点树生成100%有效的分子"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"ICML-PMLR| 基于变分自编码器使用结点树生成100%有效的分子","description":"文章题目：Junction Tree Variational Autoencoder for Molecular Graph Generation【JT-VAE】文章作者：Wengong Jin、Regina Barzilay、Tommi Jaakkola 【MIT Computer Science & Artificial Intelligence Lab】","datePublished":"2022-02-28T08:43:37.000Z","dateModified":"2022-02-28T11:24:31.404Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://jiacai-yi.github.io/article/d0e673e3.html"},"author":{"@type":"Person","name":"Jiacai Yi","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jiacai-yi.github.io/"},"publisher":{"@type":"Organization","name":"AIomedical","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://jiacai-yi.github.io/article/d0e673e3.html","wordCount":181,"articleSection":"学习成长","keywords":"molecular generation,VAE,Graph representation","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"AIomedical","url":"https://jiacai-yi.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiacai Yi","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jiacai-yi.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://jiacai-yi.github.io/","name":"AIomedical"}},{"@type":"ListItem","position":2,"item":{"@id":"https://jiacai-yi.github.io/categories/学习成长/","name":"学习成长"}},{"@type":"ListItem","position":3,"item":{"@id":"https://jiacai-yi.github.io/article/d0e673e3.html","name":"ICML-PMLR| 基于变分自编码器使用结点树生成100%有效的分子"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"ICML-PMLR| 基于变分自编码器使用结点树生成100%有效的分子","description":"文章题目：Junction Tree Variational Autoencoder for Molecular Graph Generation【JT-VAE】文章作者：Wengong Jin、Regina Barzilay、Tommi Jaakkola 【MIT Computer Science & Artificial Intelligence Lab】","datePublished":"2022-02-28T08:43:37.000Z","dateModified":"2022-03-01T12:54:14.270Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://jiacai-yi.github.io/article/d0e673e3.html"},"author":{"@type":"Person","name":"Jiacai Yi","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jiacai-yi.github.io/"},"publisher":{"@type":"Organization","name":"AIomedical","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://jiacai-yi.github.io/article/d0e673e3.html","wordCount":181,"articleSection":"学习成长","keywords":"molecular generation,VAE,Graph representation","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->

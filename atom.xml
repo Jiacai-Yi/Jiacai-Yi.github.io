@@ -6,7 +6,7 @@
   <link href="https://jiacai-yi.github.io/atom.xml" rel="self"/>
   
   <link href="https://jiacai-yi.github.io/"/>
-  <updated>2022-02-28T11:24:31.404Z</updated>
+  <updated>2022-03-01T12:54:14.270Z</updated>
   <id>https://jiacai-yi.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://jiacai-yi.github.io/article/d0e673e3.html"/>
     <id>https://jiacai-yi.github.io/article/d0e673e3.html</id>
     <published>2022-02-28T08:43:37.000Z</published>
-    <updated>2022-02-28T11:24:31.404Z</updated>
+    <updated>2022-03-01T12:54:14.270Z</updated>
     
-    <content type="html"><![CDATA[<p>文章题目：Junction Tree Variational Autoencoder for Molecular Graph Generation【JT-VAE】<br>文章作者：<span class='p gray'>Wengong Jin、Regina Barzilay、Tommi Jaakkola 【MIT Computer Science & Artificial Intelligence Lab】</span></p><span id="more"></span><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><div class="story post-story"><p><strong>该工作在分子生成领域中是比较经典的一篇文章，后续的许多工作都以该工作作为基线模型进行比较。</strong>并且作为基线模型收录于MOSES中。作者尝试将基于特定化学性质的分子设计自动化。在计算方面，这项工作涉及分子图的连续嵌入和生成。该工作使用分子图表征，而不是线性SMILES字符串实现。结点树变分自动编码器(JT-VAE)分两个阶段生成分子图，首先在化学子结构上生成树状结构的骨架，然后用图信息传递网络将它们组合成一个分子。这种方法能够逐步扩大分子，同时在每一步都保持分子的有效性。作者在从分子生成到优化的多个任务中评估了提出的模型，实验表明模型在很大程度上超过了先前最先进的基线。</p></div>]]></content>
+    <content type="html"><![CDATA[<p>文章题目：Junction Tree Variational Autoencoder for Molecular Graph Generation【JT-VAE】<br>文章作者：<span class='p gray'>Wengong Jin、Regina Barzilay、Tommi Jaakkola 【MIT Computer Science & Artificial Intelligence Lab】</span></p><span id="more"></span><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><div class="story post-story"><p><strong>该工作在分子生成领域中是比较经典的一篇文章，后续的许多工作都以该工作作为基线模型进行比较。</strong>并且作为基线模型收录于MOSES中。作者尝试将基于特定化学性质的分子设计自动化。在计算方面，这项工作涉及分子图的连续嵌入和生成。该工作使用分子图表征，而不是线性SMILES字符串实现。结点树变分自动编码器(JT-VAE)分两个阶段生成分子图，首先在化学子结构上生成树状结构的骨架，然后用图信息传递网络将它们组合成一个分子。这种方法能够逐步扩大分子，同时在每一步都保持分子的有效性。作者在从分子生成到优化的多个任务中评估了提出的模型，实验表明模型在很大程度上超过了先前最先进的基线。</p></div><h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><div class="story post-story"><div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gitee.com/yijiacai/blog_images/raw/master/d0e673e3/mind.png" class="lazyload" data-srcset="https://gitee.com/yijiacai/blog_images/raw/master/d0e673e3/mind.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"/></div></div></div><h2 id="方法概述"><a href="#方法概述" class="headerlink" title="方法概述"></a>方法概述</h2><div class="story post-story"><p>文章通过引入一个合适的编码器和一个匹配的解码器，将变分自动编码器扩展到分子图。与之前的工作不同，作者将每个生成的分子解释为由从选择的子图构建而成。</p><p>在将分子编码为向量表示时，以及将隐式向量解码为有效的分子图时，这些成分都被用作构建模块。这种观点的关键优势在于，解码器可以通过利用有效子结构的集合以及它们之间的相互作用来实现一个有效的分子，而不是试图通过化学上无效的中介来逐个原子建立分子。例如，除非存在芳香环，否则一个芳香键本身在化学上是无效的。</p><p>图1为本文方法概述。一个分子图$G$首先被分解成它的结点树$\mathcal{T}_{G}$，树上的每个彩色节点代表分子中的一个子结构。然后，文章将树和图都编码为它们的隐式向量$\mathbf{Z} \mathcal{T}$和$\mathbf{Z} {G}$。为了解码分子，首先从$\mathbf{Z} \mathcal{T}$中重建结点树，然后将结点树中的节点组装回原始分子。</p><div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gitee.com/yijiacai/blog_images/raw/master/d0e673e3/Figure 1.png" class="lazyload" data-srcset="https://gitee.com/yijiacai/blog_images/raw/master/d0e673e3/Figure 1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Figure 1. 方法概述"/></div><span class="image-caption">Figure 1. 方法概述</span></div> </div>]]></content>
     
     
     <summary type="html">&lt;p&gt;文章题目：Junction Tree Variational Autoencoder for Molecular Graph Generation【JT-VAE】&lt;br&gt;文章作者：&lt;span class=&#39;p gray&#39;&gt;Wengong Jin、Regina Barzilay、Tommi Jaakkola 【MIT Computer Science &amp; Artificial Intelligence Lab】&lt;/span&gt;&lt;/p&gt;</summary>
